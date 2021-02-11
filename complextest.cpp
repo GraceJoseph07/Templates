@@ -1,5 +1,5 @@
 #include"complex.h"
-#include<gtest/test.h>
+#include<gtest/gtest.h>
 #include"complex.cpp"
 
 TEST(Complex,EmptyConstructor){

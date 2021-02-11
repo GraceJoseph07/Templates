@@ -2,9 +2,10 @@
  * @brief template program for complex numbers
  * 
  */
+#ifndef __COMPLEX_H
 #define __COMPLEX_H
 
-template<typename T>
+template<class T>
 class Complex {
   T m_real;
   T m_image;
@@ -19,7 +20,7 @@ class Complex {
    * @brief Initialize parameters
    * 
    */
-  int getReal(T);
+  T getReal(T);
   /**
    * @brief Get the Real object
    * 
@@ -27,7 +28,7 @@ class Complex {
    */
   
   
-  int getImag(T);
+  T getImag(T);
   /**
    * @brief Get the Imag object
    * 

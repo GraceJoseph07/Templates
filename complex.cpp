@@ -1,21 +1,22 @@
 #include"complex.h"
-template <typename T>
-Complex<T>::Complex(){
+#include<iostream>
+template <class T>
+Complex<T>::Complex():m_real(0),m_image(0){}
+
+template <class T>
+Complex<T>::Complex(T real,T imag):m_real(real),m_imag(imag){
 
 }
-template <typename T>
-Complex<T>::Complex(T real,Y imag):m_real(real),m_imag(imag){
-
-}
-template <typename T>
-Complex<T>::getReal()const{
+template <class T>
+T Complex<T>::getReal(){
     return m_real;
 }
-template <typename T>
-Complex<T>::getImag()const{
+template <class T>
+T Complex<T>::getImag(){
     return m_imag;
 }
-template<typename T>
+
+template<class T>
 void Complex<T>::display(){
-    cout<<m_real,m_imag;
+    std::cout<<getReal()<<getImag();
 }
