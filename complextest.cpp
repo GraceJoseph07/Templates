@@ -9,6 +9,6 @@ TEST(Complex,EmptyConstructor){
 }
 TEST(Complex,ParametrizedConstructor){
     Complex<T> c2;
-    EXPECT_EQ(5,c1.getReal());
-    EXPECT_EQ(6,c1.getImag());
+    EXPECT_EQ(5,c2.getReal());
+    EXPECT_EQ(6,c2.getImag());
 }
